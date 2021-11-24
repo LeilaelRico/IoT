@@ -19,7 +19,7 @@
     // Get element from the DOM
     const tempElement = document.getElementById('Temperatura');
     const humElement = document.getElementById('Humedad');
-    const altemp = new Boolean(document.getElementById("AT"));
+    const altemp = document.getElementById("AT");
     const batemp = document.getElementById("BT");
     const alhum = document.getElementById("AH");
     const bahum = document.getElementById("BH");
