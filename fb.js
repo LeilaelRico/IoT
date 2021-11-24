@@ -31,12 +31,12 @@
     const humRef = database.ref('Proyecto1').child('Humedad');
 
     // Ref. a alarmas temperatura
-    const altemRef = database.ref('Proyecto1');
-    const batemRef = database.ref('Proyecto1');
+    const altemRef = database.ref('Proyecto1').child('AT');
+    const batemRef = database.ref('Proyecto1').child('BT');
 
     // Ref. a alarmas humedad
-    const alhumRef = database.ref('Proyecto1');
-    const bahumRef = database.ref('Proyecto1');
+    const alhumRef = database.ref('Proyecto1').child('AH');
+    const bahumRef = database.ref('Proyecto1').child('BH');
 
     // Sync objects changes
     tempRef.limitToLast(1).on('value', function(snapshot) {
@@ -56,10 +56,10 @@
     });
 
     altemRef.limitToLast(1).on('value', function(snapshot) {
-        snapshot.forEach(function(ParentSnapshot) {
-            var ParentData = ParentSnapshot.val();
-            console.log("AT: " + ParentData);
-            altemp.innerText = ParentData;
+        snapshot.forEach(function(childSnapshot) {
+            var childData = childSnapshot.val();
+            console.log("AT: " + childData);
+            altemp.innerText = childData;
         });
     });
 
@@ -87,4 +87,4 @@
         });
     });
 
-}());
+}()); 
