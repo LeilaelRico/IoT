@@ -4,3 +4,4 @@ Consta de un *.js* que obtiene la información contenida en una base de datos de
 
 ## Autores:
 * Cristian Leilael Rico Espinosa A01707023.
+* Ricardo Nunez Alanis A01703259.
