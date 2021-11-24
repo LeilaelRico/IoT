@@ -31,12 +31,12 @@
     const humRef = database.ref('Proyecto1').child('Humedad');
 
     // Ref. a alarmas temperatura
-    const altemRef = database.ref('Proyecto1').child('AT');
-    const batemRef = database.ref('Proyecto1').child('BT');
+    const altemRef = database.ref('Proyecto1');
+    const batemRef = database.ref('Proyecto1');
 
     // Ref. a alarmas humedad
-    const alhumRef = database.ref('Proyecto1').child('AH');
-    const bahumRef = database.ref('Proyecto1').child('BH');
+    const alhumRef = database.ref('Proyecto1');
+    const bahumRef = database.ref('Proyecto1');
 
     // Sync objects changes
     tempRef.limitToLast(1).on('value', function(snapshot) {
@@ -56,16 +56,16 @@
     });
 
     altemRef.limitToLast(1).on('value', function(snapshot) {
-        snapshot.forEach(function(childSnapshot) {
-            var childData = childSnapshot.toString();
-            console.log("AT: " + childData);
-            altemp.innerText = childData;
+        snapshot.forEach(function(ParentSnapshot) {
+            var ParentData = ParentSnapshot.val();
+            console.log("AT: " + ParentData);
+            altemp.innerText = ParentData;
         });
     });
 
     batemRef.limitToLast(1).on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
-            var childData = childSnapshot.toString();
+            var childData = childSnapshot.val();
             console.log("BT: " + childData);
             batemp.innerText = childData;
         });
@@ -73,7 +73,7 @@
 
     alhumRef.limitToLast(1).on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
-            var childData = childSnapshot.toString();
+            var childData = childSnapshot.val();
             console.log("AH: " + childData);
             alhum.innerText = childData;
         });
@@ -81,7 +81,7 @@
 
     bahumRef.limitToLast(1).on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
-            var childData = childSnapshot.toString();
+            var childData = childSnapshot.val();
             console.log("BH: " + childData);
             bahum.innerText = childData;
         });
