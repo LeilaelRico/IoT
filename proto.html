@@ -36,29 +36,20 @@
 
             <!-- Valores iniciales: max-width: 18rem  font-size: 20px  font-size: 75px -->
 
-            <div class="col-sm-6"> <!-- Alerta Alta temperatura -->
-                <div class="card text-white bg-danger mb-3" style="max-width: 10rem;">
-                    <div style="font-size: 12px;" class="card-header">Alerta de Alta Temperatura</div>
-                    <div class="card-body">
-                        <h1 id="AT" style="font-size: 15px;" class="card-title"></h1>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6"> <!-- Alerta Alta Humedad -->
-                <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
-                    <div style="font-size: 12px;" class="card-header">Alerta de Alta Humedad</div>
-                    <div class="card-body">
-                        <h1 id="AH" style="font-size: 15px;" class="card-title"></h1>
-                    </div>
-                </div>
-            </div>
-
             <div class="col-sm-6"> <!-- Columna de Temperatura -->
                 <div class="card border-dark mb-3" style="max-width: 18rem;">
                     <div style="font-size: 20px;" class="card-header">Temperatura (°C)</div>
                     <div class="card-body">
                         <h1 id="Temperatura" style="font-size: 75px;" class="card-title">°C</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6"> <!-- Alerta Temperatura -->
+                <div class="card text-white bg-danger mb-3" style="max-width: 10rem;">
+                    <div style="font-size: 12px;" class="card-header">Alerta de Alta Temperatura</div>
+                    <div class="card-body">
+                        <h1 id="AlarmaT" style="font-size: 15px;" class="card-title"></h1>
                     </div>
                 </div>
             </div>
@@ -72,25 +63,15 @@
                 </div>
             </div>
 
-            <div class="col-sm-6"> <!-- Alerta Baja Temperatura --> 
-                <div class="card text-white bg-info mb-3" style="max-width: 10rem;">
-                    <div style="font-size: 12px;" class="card-header">Alerta de Baja Temperatura</div>
+            <div class="col-sm-6"> <!-- Alerta Humedad -->
+                <div class="card text-white bg-primary mb-3" style="max-width: 10rem;">
+                    <div style="font-size: 12px;" class="card-header">Alerta de Alta Humedad</div>
                     <div class="card-body">
-                        <h1 id="BT" style="font-size: 15px;" class="card-title"></h1>
+                        <h1 id="AlarmaH" style="font-size: 15px;" class="card-title"></h1>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6"> <!-- Alerta Baja Humedad -->
-                <div class="card text-white bg-warning mb-3" style="max-width: 10rem;">
-                    <div style="font-size: 12px;" class="card-header">Alerta de Baja Humedad</div>
-                    <div class="card-body">
-                        <h1 id="BH" style="font-size: 15px;" class="card-title"></h1>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
 
         <!-- Needed for Bootstrap Material Design -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
