@@ -19,8 +19,8 @@
     // Get element from the DOM
     const tempElement = document.getElementById('Temperatura');
     const humElement = document.getElementById('Humedad');
-    const altemp = document.getElementById("AlarmaT");
-    const alhum = document.getElementById("AlarmaH");
+    const altemp = document.getElementById("AT");
+    const alhum = document.getElementById("AH");
 
     // Create temperature database reference
     const tempRef = database.ref('Proyecto1').child('Temperatura');
@@ -29,8 +29,8 @@
     const humRef = database.ref('Proyecto1').child('Humedad');
 
     // Ref. a alarmas
-    const altemRef = database.ref('Proyecto1').child('AlarmaT');
-    const alhumRef = database.ref('Proyecto1').child('AlarmaH');
+    const altemRef = database.ref('Proyecto1').child('AT');
+    const alhumRef = database.ref('Proyecto1').child('AH');
 
 
     // Sync objects changes
@@ -53,7 +53,7 @@
     altemRef.limitToLast(1).on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
-            console.log("AlarmaT: " + childData);
+            console.log("AT: " + childData);
             altemp.innerText = childData;
         });
     });
@@ -61,7 +61,7 @@
     alhumRef.limitToLast(1).on('value', function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
-            console.log("AlarmaH: " + childData);
+            console.log("AH: " + childData);
             alhum.innerText = childData;
         });
     });
