@@ -12,10 +12,11 @@ body
   background: #ebe5e5;;
 }
 
-div.widget
+div.widget1
 {
-  position: relative;
-  left: -500px;
+  position: fixed;
+  top: 300px;
+  left: 200px;
   width: 325px;
   height: 120px;
   margin: 75px auto;
@@ -26,9 +27,19 @@ div.widget
   box-shadow: 0px 31px 35px -26px #080c21;
 }
 
-div.left-panel
+div.widget2
 {
-
+  position: fixed;
+  top: 300px;
+  right: 200px;
+  width: 325px;
+  height: 120px;
+  margin: 75px auto;
+  background-color: #f7f7f7;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
 }
 
 div.date
@@ -64,7 +75,7 @@ div.right-panel
   position: absolute;
   float: left;
   top: 0;
-  margin-top: 1%;
+  margin-top: -3%;
   padding-left: 5px;
 }
 
@@ -75,4 +86,16 @@ div.top-panel
   top: 0;
   margin-top: 5%;
   padding-left: 15px;
+}
+
+.plant
+{
+  position: relative;
+  top: 200px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px
 }
