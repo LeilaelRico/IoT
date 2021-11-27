@@ -64,6 +64,15 @@ div.right-panel
   position: absolute;
   float: left;
   top: 0;
+  margin-top: 1%;
+  padding-left: 5px;
+}
+
+div.top-panel
+{
+  position: absolute;
+  float: left;
+  top: 0;
   margin-top: 5%;
-  padding-left: 45px;
+  padding-left: 15px;
 }
