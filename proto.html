@@ -6,25 +6,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap Material Design -->
-        <link rel="stylesheet"
-              href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-              integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
-              crossorigin="anonymous">
         <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
-
-        <style>
-
-            body {
-                background-color: #ebe5e5 !important;
-            }
-            .card {
-                margin: 0 auto; /* Added */
-                float: none; /* Added */
-                margin-bottom: 10px; /* Added */
-                margin-top: 30px
-            }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="styles.css">
 
         <title>Prototipo</title>
 
@@ -35,57 +18,51 @@
         <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="background-color: rgb(55, 167, 115);">
 
             <img src="https://cdn-icons-png.flaticon.com/512/1574/1574211.png" width="50">
-            <p style="text-align: center; color:cornsilk">Musguillo Longuillo</p>
+            <p style="color:cornsilk">Musguillo Longuillo</p>
         
         </header>
 
-        <div class="row justify-content-center">
-
-            <!-- Valores iniciales: max-width: 18rem  font-size: 20px  font-size: 75px -->
-
-            <div class="col-md-auto"> <!-- Columna de Temperatura -->
-                <div class="card text-white mb-3" style="max-width: 18rem; background-color: rgb(192, 80, 15);">
-                    <div style="font-size: 20px;" class="card-header">Temperatura (°C)</div>
-                    <div class="card-body">
-                        <h1 id="Temperatura" style="font-size: 75px;" class="card-title">°C</h1>
-                    </div>
+        <div class="widget">
+        
+            <div class="left-panel panel">
+                <div class="date">
+                    Temperatura
+                </div>
+                <div class="city" id="AT">
+                    Estado
+                </div>
+                <div class="temp" id="Temperatura" img src="https://s5.postimg.cc/yzcm7htyb/image.png" alt="" width="60">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" alt="" width="60">
+                    &deg;
                 </div>
             </div>
-
-            <div class="col-md-auto align-self-center"> <!-- Alerta Temperatura -->
-                <div class="card text-white mb-3" style="max-width: 10rem; background-color: rgb(211, 126, 15);">
-                    <div style="font-size: 15px;" class="card-header">Estado de Temperatura</div>
-                    <div class="card-body">
-                        <h1 id="AT" style="font-size: 20px;" class="card-title"></h1>
-                    </div>
-                </div>
+            <div class="right-panel panel">
+                <iframe src="https://giphy.com/embed/8Pvsrdy6I6tW1oXbZv" frameBorder="0" width="160"></iframe>
             </div>
 
-            <div class="w-100"></div>
+        </div>
 
-            <div class="col-md-auto"> <!-- Columna de Humedad -->
-                <div class="card text-white mb-3" style="max-width: 18rem; background-color: rgb(5, 53, 107);">
-                    <div style="font-size: 20px;" class="card-header">Humedad (%)</div>  
-                    <div class="card-body">
-                        <h1 id="Humedad" style="font-size: 75px;" class="card-title"><span>%</span></h1>
-                    </div>
+
+        <div class="widget">
+        
+            <div class="left-panel panel">
+                <div class="date">
+                    Humedad
+                </div>
+                <div class="city" id="AH">
+                    Estado
+                </div>
+                <div class="temp" id="Humedad" img src="https://s5.postimg.cc/yzcm7htyb/image.png" alt="" width="60">
+                    <img src="https://s5.postimg.cc/yzcm7htyb/image.png" alt="" width="60">
+                    &deg;
                 </div>
             </div>
-
-            <div class="col-md-auto align-self-center"> <!-- Alerta Humedad -->
-                <div class="card text-white bg-info mb-3" style="max-width: 10rem;">
-                    <div style="font-size: 15px;" class="card-header">Estado de Humedad</div>
-                    <div class="card-body">
-                        <h1 id="AH" style="font-size: 20px;" class="card-title"></h1>
-                    </div>
-                </div>
+            <div class="right-panel panel">
+                <img src="https://cdn.dribbble.com/users/197853/screenshots/5506993/media/c95efedb260edbb304465a81f3558024.gif" width="160">
             </div>
 
+        </div>
 
-        <!-- Needed for Bootstrap Material Design -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
         <!-- Firebase App -->
         <script src="fb.js"></script>
 
