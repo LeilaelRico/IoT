@@ -4,14 +4,12 @@
   padding: 0;
   outline: none;
 }
-
 body
 {
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
   background: #ebe5e5;;
 }
-
 div.widget1
 {
   position: fixed;
@@ -26,7 +24,6 @@ div.widget1
   padding-right: 30px;
   box-shadow: 0px 31px 35px -26px #080c21;
 }
-
 div.widget2
 {
   position: fixed;
@@ -41,61 +38,93 @@ div.widget2
   padding-right: 30px;
   box-shadow: 0px 31px 35px -26px #080c21;
 }
-
-div.date
+div.temperatura
 {
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgba(0,0,0,0.7);
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.7);
 }
-
-div.city
+div.humedad
+{
+  text-align: right;
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.7);
+}
+div.at
 {
   font-size: 14px;
   font-weight: bold;
   padding-top: 5px;
   color: rgba(0,0,0,0.5);
 }
-
-div.temp
+div.ah
+{
+  text-align: right;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.5);
+}
+div.valorT
 {
   font-size: 50px;
   color: rgba(0,0,0,0.9);
   font-weight: 100;
 }
-
+div.valorH
+{
+  text-align: right;
+  font-size: 50px;
+  color: rgba(0,0,0,0.9);
+  font-weight: 100;
+}
 div.panel
 {
   display: inline-block;
 }
-
-div.right-panel
+div.hume-panel
 {
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 7%;
+  padding-left: 200px;
+}
+div.temp-panel
+{
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 7%;
+  padding-left: 10px;
+}
+div.aire-panel
+{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 5%;
+  padding-right: 175px;
+}
+div.regar-panel
+{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
   position: absolute;
   float: left;
   top: 0;
   margin-top: 7%;
-  padding-left: 60px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  padding-left: 20px;
 }
-
-div.top-panel
-{
-  position: absolute;
-  float: left;
-  top: 0;
-  margin-top: 5%;
-  padding-left: 15px;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
 .plant
 {
   position: relative;
-  top: 200px;
+  top: 150px;
   background-color: #f7f7f7;
   border-radius: 20%;
   display: block;
@@ -104,15 +133,19 @@ div.top-panel
   width: 300px;
   box-shadow: 0px 31px 35px -26px #080c21;
 }
-
 .musguillo1
 {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  margin-right: 1300px;
+  margin-right: 1325px;
 }
-
 .musguillo2
 {
-  margin-left: 20px;
+  margin-left: 40px;
+}
+h4
+{
+  position: fixed;
+  top: 25px;
+  right: 700px;
 }
