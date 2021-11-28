@@ -135,15 +135,15 @@ div.regar-panel
 }
 .musguillo1
 {
-  position: relative;
+  position: absolute;
+  left: 35px;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-  margin-right: 1325px;
 }
 .musguillo2
 {
-  position: relative;
-  margin-left: 40px;
+  position: absolute;
+  right: 35px;
 }
 h4
 {
