@@ -10,6 +10,10 @@ body
   overflow: hidden;
   background: #ebe5e5;;
 }
+#header {
+  background-color: rgb(55, 167, 115);
+  height: 85px;
+}
 div.widget1
 {
   position: fixed;
