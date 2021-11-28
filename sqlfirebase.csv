@@ -1,0 +1,98 @@
+﻿AlarmaHume,AlarmaTemp,Humedad,Temperatura,Tiempo
+Estable,Estable,55,23.6,00:00:04
+Estable,Estable,56,23.5,00:19:18
+Estable,Estable,56,23.5,00:34:19
+Estable,Estable,57,23.4,00:49:21
+Estable,Estable,55,23.9,01:00:09
+Estable,Estable,55,23.9,01:15:11
+Estable,Estable,55,23.9,01:30:12
+Estable,Estable,55,23.8,01:45:14
+Estable,Estable,55,23.8,02:00:16
+Muy mojao,Estable,86,26.3,02:15:17
+Estable,Estable,56,23.8,02:30:19
+Estable,Estable,56,23.8,02:45:20
+Estable,Estable,56,23.7,03:00:22
+Estable,Estable,57,23.6,03:15:23
+Estable,Estable,57,23.6,03:30:25
+Estable,Estable,57,23.5,03:45:27
+Estable,Estable,57,23.4,04:00:28
+Estable,Estable,58,23.3,04:15:30
+Estable,Estable,58,23.2,04:30:31
+Estable,Estable,59,23.1,04:45:33
+Estable,Estable,59,23.1,05:00:34
+Estable,Auxilio me congelo,59,23,05:15:36
+Estable,Auxilio me congelo,60,22.9,05:30:37
+Estable,Auxilio me congelo,60,22.8,05:45:39
+Estable,Auxilio me congelo,60,22.6,06:00:41
+Estable,Auxilio me congelo,60,22.5,06:15:42
+Estable,Auxilio me congelo,60,22.4,06:30:44
+Estable,Auxilio me congelo,60,22.4,06:45:46
+Estable,Auxilio me congelo,61,22.2,07:00:48
+Estable,Auxilio me congelo,61,22.1,07:15:50
+Estable,Auxilio me congelo,61,22,07:30:51
+Estable,Auxilio me congelo,60,21.9,07:45:53
+Estable,Auxilio me congelo,61,21.8,08:00:55
+Estable,Auxilio me congelo,61,21.7,08:15:56
+Estable,Auxilio me congelo,62,21.7,08:30:58
+Estable,Auxilio me congelo,62,21.6,08:46:00
+Estable,Auxilio me congelo,62,21.6,09:01:01
+Estable,Auxilio me congelo,62,21.5,09:16:03
+Estable,Auxilio me congelo,62,21.4,09:31:05
+Estable,Auxilio me congelo,62,21.3,09:46:07
+Estable,Auxilio me congelo,62,21.3,10:01:08
+Estable,Auxilio me congelo,61,21.3,10:16:10
+Estable,Auxilio me congelo,61,21.4,10:31:12
+Estable,Auxilio me congelo,61,21.5,10:46:14
+Estable,Auxilio me congelo,61,21.6,11:01:16
+Estable,Auxilio me congelo,60,21.7,11:16:18
+Estable,Auxilio me congelo,60,21.8,11:31:19
+Estable,Auxilio me congelo,61,22,11:46:21
+Estable,Auxilio me congelo,60,22,12:01:22
+Estable,Auxilio me congelo,60,22.1,12:16:24
+Estable,Auxilio me congelo,59,22.2,12:31:26
+Estable,Estable,54,24.7,12:46:27
+Estable,Estable,53,25.1,13:01:29
+Estable,Estable,53,24.7,13:18:54
+Estable,Estable,54,24.3,13:33:56
+Estable,Estable,55,24.1,13:48:57
+Estable,Estable,51,24.2,13:59:08
+Estable,Estable,50,24.1,14:15:37
+Estable,Estable,55,24,14:30:39
+Estable,Estable,55,24,14:45:40
+Estable,Estable,55,24.1,15:00:42
+Estable,Estable,55,24.1,15:15:43
+Estable,Estable,54,24.2,15:30:45
+Estable,Estable,54,24.3,15:45:47
+Estable,Estable,53,24.4,16:00:48
+Estable,Estable,52,24.5,16:15:50
+Estable,Estable,53,24.6,16:31:52
+Estable,Estable,53,24.6,16:43:19
+Estable,Estable,48,24.7,16:58:32
+Estable,Estable,53,24.8,17:08:58
+Estable,Estable,53,24.9,17:23:59
+Estable,Estable,53,24.9,17:39:01
+Estable,Estable,52,24.8,17:54:02
+Estable,Estable,52,24.8,18:09:04
+Estable,Estable,52,24.8,18:24:06
+Estable,Estable,52,24.7,18:39:07
+Estable,Estable,52,24.7,18:54:09
+Estable,Estable,53,24.6,19:24:50
+Estable,Estable,52,24.7,19:39:51
+Estable,Estable,53,24.6,19:54:53
+Estable,Estable,53,24.6,20:09:54
+Estable,Estable,53,24.5,20:24:56
+Estable,Estable,53,24.4,20:39:57
+Estable,Estable,54,24.5,20:54:59
+Estable,Estable,54,24.4,21:10:01
+Estable,Estable,54,24.4,21:25:02
+Estable,Estable,55,24.2,21:40:04
+Estable,Estable,55,24.2,21:55:05
+Estable,Estable,55,24.1,22:10:07
+Estable,Estable,55,24.1,22:25:09
+Estable,Estable,55,24,22:40:10
+Estable,Estable,56,23.9,22:55:12
+Estable,Estable,56,23.7,23:10:13
+Estable,Estable,56,23.6,23:19:06
+Estable,Estable,56,23.6,23:34:07
+Estable,Estable,56,23.5,23:49:09
+Estable,Estable,56,23.5,00:04:16
