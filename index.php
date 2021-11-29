@@ -134,7 +134,7 @@
 
         <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="background-color: rgb(55, 167, 115);">
 
-            <img src="https://cdn-icons-png.flaticon.com/512/1574/1574211.png" width="50">
+            <img src="https://media3.giphy.com/media/ooGJRyoy47V5QYhoHv/giphy.gif?cid=790b761111158b44e41beb15c0629b422991fb4cb2f3b869&rid=giphy.gif&ct=s" width="100">
             <p style="text-align: center; color:cornsilk">Musguillo Longuillo</p>
 
         </header>
