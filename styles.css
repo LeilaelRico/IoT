@@ -7,8 +7,7 @@
 body
 {
   font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-  background: #ebe5e5;;
+  background: #ebe5e5;
 }
 #header {
   background-color: rgb(55, 167, 115);

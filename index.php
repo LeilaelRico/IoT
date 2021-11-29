@@ -17,6 +17,9 @@
         <!------------------------------------------------------------->
 
         <style type = "text/css">
+          head{
+            overflow: auto;
+          }
           table {
             border-collapse: collapse;
             width: 30%;
