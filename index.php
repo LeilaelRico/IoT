@@ -17,6 +17,21 @@
         <!------------------------------------------------------------->
 
         <style type = "text/css">
+          h3{
+            position: absolute;
+            top: 15px;
+            right: 500px;
+            left: 500px;
+          }
+          .back{
+            left: 35px;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+          }
+          .musguillo{
+            position: absolute;
+            right: 35px;
+          }
           div.conteo{
             margin-left: auto;
             margin-right: auto;
@@ -170,9 +185,11 @@
 
         <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="background-color: rgb(55, 167, 115);">
 
-            <img src="https://media3.giphy.com/media/ooGJRyoy47V5QYhoHv/giphy.gif?cid=790b761111158b44e41beb15c0629b422991fb4cb2f3b869&rid=giphy.gif&ct=s" width="100">
-            <h4 style="text-align: center; color:cornsilk">Musguillo Longuillo</h4>
-
+            <a href="proto.html"><img src="https://media1.giphy.com/media/vyAjrXVwdqDbKr8e1N/giphy.gif?cid=790b7611e1504a37c8b01e1d7731aa2d0301662667318538&rid=giphy.gif&ct=s" width="90" class="back"></a>
+            <h3 style="text-align: center; font-size: 30px; color:cornsilk"> Musguillo Longuillo</h3>
+            <img src="https://media3.giphy.com/media/ooGJRyoy47V5QYhoHv/giphy.gif?cid=790b761111158b44e41beb15c0629b422991fb4cb2f3b869&rid=giphy.gif&ct=s" width="100" class="musguillo">
+            
+            
         </header>
 
         <!--- 4. Recuperar datos de las consultas e imprimirlos --->
