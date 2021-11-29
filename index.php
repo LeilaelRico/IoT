@@ -135,7 +135,7 @@
         <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar" style="background-color: rgb(55, 167, 115);">
 
             <img src="https://media3.giphy.com/media/ooGJRyoy47V5QYhoHv/giphy.gif?cid=790b761111158b44e41beb15c0629b422991fb4cb2f3b869&rid=giphy.gif&ct=s" width="100">
-            <p style="text-align: center; color:cornsilk">Musguillo Longuillo</p>
+            <h4 style="text-align: center; color:cornsilk">Musguillo Longuillo</h4>
 
         </header>
 
@@ -144,7 +144,7 @@
         <?php
           $cH = mysqli_fetch_row($conteoH);
           $cT = mysqli_fetch_row($conteoT);
-          echo "<br/>Conteo de activación de alarmas:<br/>";
+          echo "<br/>Conteo de activación de alarmas<br/>";
           echo "&emsp;Alarma de Humedad: " . $cH[0];
           echo "<br/>&emsp;Alarma de Temperatura: " . $cT[0] . "<br/>";
         ?>
