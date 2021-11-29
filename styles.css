@@ -124,6 +124,11 @@ div.regar-panel
   margin-top: 7%;
   padding-left: 20px;
 }
+div.tablaAH
+{
+  float: right;
+  right: 35px;
+}
 .plant
 {
   position: relative;

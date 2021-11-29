@@ -17,18 +17,54 @@
         <!------------------------------------------------------------->
 
         <style type = "text/css">
-          head{
-            overflow: auto;
+          div.conteo{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 40px;
           }
-          table {
+          div.estadisticas1{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 40px;
+          }
+          table.humeT{
             border-collapse: collapse;
             width: 30%;
             color: #588c7e;
             font-family: monospace;
             font-size: 13px;
             text-align: center;
+            padding-left: 40px;
           }
-
+          div.estadisticas2{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding-left: 40px;
+          }
+          table.tempT{
+            border-collapse: collapse;
+            width: 30%;
+            color: #588c7e;
+            font-family: monospace;
+            font-size: 13px;
+            text-align: center;
+            padding-left: 40px;
+          }
+          div.AT{
+            text-align: left;
+            padding-left: 40px;
+          }
+          div.AH{
+            text-align: left;
+            padding-left: 40px;
+          }
+          div.revision{
+            text-align: left;
+            padding-left: 40px;
+          }         
           th {
             background-color: #588c7e;
             color: white;
@@ -43,7 +79,7 @@
           // 1. Conectarse al servidor
           $host = 'localhost';
           $usuario = 'root';
-          $password = '';
+          $password = 'root';
           $db = 'iot';
 
           // 2. Conectarse a la Base de Datos
@@ -140,7 +176,7 @@
         </header>
 
         <!--- 4. Recuperar datos de las consultas e imprimirlos --->
-
+        <div class="conteo">
         <?php
           $cH = mysqli_fetch_row($conteoH);
           $cT = mysqli_fetch_row($conteoT);
@@ -148,10 +184,12 @@
           echo "&emsp;Alarma de Humedad: " . $cH[0];
           echo "<br/>&emsp;Alarma de Temperatura: " . $cT[0] . "<br/>";
         ?>
+        </div>
 
         <!------------------------------------------------------------->
+        <div class="AH">
         <br/>Activación de Alarma de Humedad:
-        <table>
+        <table class="humeT">
           <tr>
             <th>Tiempo</th>
             <th>Mensaje</th>
@@ -164,10 +202,26 @@
             }
           ?>
         </table>
-
+        </div>
         <!------------------------------------------------------------->
+
+        <div class="estadisticas1">
+        <?php
+          echo "<br/>Estadísticas de Humedad:";
+          $maxH = mysqli_fetch_array($statsH);
+          echo "<br/>&emsp; Máximo: " . $maxH[1] . "&emsp; Tiempo: " . $maxH[0];
+          $minH = mysqli_fetch_array($statsH);
+          echo "<br/>&emsp; Mínimo: " . $minH[1] .  "&emsp; Tiempo: " . $minH[0];
+          $promH = mysqli_fetch_array($promedio);
+          echo "<br/>&emsp; Promedio: " . $promH['Promedio'];
+          ?>
+        </div>
+        
+        <!------------------------------------------------------------->
+
+        <div class="AT">
         <br/>Activación de Alarma de Temperatura:
-        <table>
+        <table class="tempT">
           <tr>
             <th>Tiempo</th>
             <th>Mensaje</th>
@@ -180,17 +234,12 @@
           }
           ?>
         </table>
+        </div>
 
         <!------------------------------------------------------------->
-        <?php
-          echo "<br/>Estadísticas de Humedad:";
-          $maxH = mysqli_fetch_array($statsH);
-          echo "<br/>&emsp; Máximo: " . $maxH[1] . "&emsp; Tiempo: " . $maxH[0];
-          $minH = mysqli_fetch_array($statsH);
-          echo "<br/>&emsp; Mínimo: " . $minH[1] .  "&emsp; Tiempo: " . $minH[0];
-          $promH = mysqli_fetch_array($promedio);
-          echo "<br/>&emsp; Promedio: " . $promH['Promedio'];
 
+        <div class="estadisticas2">
+        <?php
           echo "<br/><br/>Estadísticas de Temperatura:";
           $maxT = mysqli_fetch_array($statsT);
           echo "<br/>&emsp; Máximo: " . $maxT[1] . "&emsp; Tiempo: " . $maxT[0];
@@ -199,21 +248,25 @@
           $promT = mysqli_fetch_array($promedio);
           echo "<br/>&emsp; Promedio: " . $promT['Promedio'] . "<br/><br/>";
         ?>
+        </div>
 
         <!------------------------------------------------------------->
 
-        <div id="curve_chart" style="width: 600px; height: 300px;"></div>
-
-        <!------------------------------------------------------------->
+        <div class="revision">
         <?php
           $row = mysqli_fetch_array($last);
           $tiempo = $row['Tiempo'];
           echo "<br/>Última revisión: " . $tiempo;
         ?>
+        </div>
+
+        <!------------------------------------------------------------->
+
+        <div id="curve_chart" style="width: 600px; height: 300px; position: relative; bottom: 500px; left: 700px;"></div>
+       
+        <!------------------------------------------------------------->
 
     </body>
-
-    <!------------------------------------------------------------->
 
     <?php
       // 5. Cerrar la coneción al servidor
