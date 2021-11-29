@@ -26,7 +26,7 @@
             color: #588c7e;
             font-family: monospace;
             font-size: 13px;
-            text-align: left;
+            text-align: center;
           }
 
           th {
