@@ -79,7 +79,7 @@
           div.revision{
             text-align: left;
             padding-left: 40px;
-          }         
+          }
           th {
             background-color: #588c7e;
             color: white;
@@ -94,7 +94,7 @@
           // 1. Conectarse al servidor
           $host = 'localhost';
           $usuario = 'root';
-          $password = 'root';
+          $password = '';
           $db = 'iot';
 
           // 2. Conectarse a la Base de Datos
@@ -135,10 +135,8 @@
             UNION SELECT ROUND(AVG(Temperatura), 2) AS Promedio FROM data";
           $promedio = mysqli_query($enlacedb, $query);
 
-          // Registros de las últimas 3 horas (12 registros). ----------
-          $query = "SELECT * FROM (SELECT Tiempo, Humedad, Temperatura
-            FROM data ORDER BY Tiempo DESC LIMIT 12) as reg
-            ORDER BY reg.Tiempo ASC";
+          // Registros de las últimas 24 horas. -------------------------
+          $query = "SELECT Tiempo, Humedad, Temperatura FROM data";
           $registros = mysqli_query($enlacedb, $query);
 
           // Hora del último registro. ---------------------------------
@@ -188,8 +186,8 @@
             <a href="proto.html"><img src="https://media1.giphy.com/media/vyAjrXVwdqDbKr8e1N/giphy.gif?cid=790b7611e1504a37c8b01e1d7731aa2d0301662667318538&rid=giphy.gif&ct=s" width="90" class="back"></a>
             <h3 style="text-align: center; font-size: 30px; color:cornsilk"> Musguillo Longuillo</h3>
             <img src="https://media3.giphy.com/media/ooGJRyoy47V5QYhoHv/giphy.gif?cid=790b761111158b44e41beb15c0629b422991fb4cb2f3b869&rid=giphy.gif&ct=s" width="100" class="musguillo">
-            
-            
+
+
         </header>
 
         <!--- 4. Recuperar datos de las consultas e imprimirlos --->
@@ -226,14 +224,14 @@
         <?php
           echo "<br/>Estadísticas de Humedad:";
           $maxH = mysqli_fetch_array($statsH);
-          echo "<br/>&emsp; Máximo: " . $maxH[1] . "&emsp; Tiempo: " . $maxH[0];
+          echo "<br/>&emsp; Máximo: " . $maxH[1] . "&emsp; Hora: " . $maxH[0];
           $minH = mysqli_fetch_array($statsH);
-          echo "<br/>&emsp; Mínimo: " . $minH[1] .  "&emsp; Tiempo: " . $minH[0];
+          echo "<br/>&emsp; Mínimo: " . $minH[1] .  "&emsp; Hora: " . $minH[0];
           $promH = mysqli_fetch_array($promedio);
           echo "<br/>&emsp; Promedio: " . $promH['Promedio'];
           ?>
         </div>
-        
+
         <!------------------------------------------------------------->
 
         <div class="AT">
@@ -259,9 +257,9 @@
         <?php
           echo "<br/><br/>Estadísticas de Temperatura:";
           $maxT = mysqli_fetch_array($statsT);
-          echo "<br/>&emsp; Máximo: " . $maxT[1] . "&emsp; Tiempo: " . $maxT[0];
+          echo "<br/>&emsp; Máximo: " . $maxT[1] . "&emsp; Hora: " . $maxT[0];
           $minT = mysqli_fetch_array($statsT);
-          echo "<br/>&emsp; Mínimo: " . $minT[1] .  "&emsp; Tiempo: " . $minT[0];
+          echo "<br/>&emsp; Mínimo: " . $minT[1] .  "&emsp; Hora: " . $minT[0];
           $promT = mysqli_fetch_array($promedio);
           echo "<br/>&emsp; Promedio: " . $promT['Promedio'] . "<br/><br/>";
         ?>
@@ -273,14 +271,14 @@
         <?php
           $row = mysqli_fetch_array($last);
           $tiempo = $row['Tiempo'];
-          echo "<br/>Última revisión: " . $tiempo;
+          echo "Última revisión: " . $tiempo;
         ?>
         </div>
 
         <!------------------------------------------------------------->
 
-        <div id="curve_chart" style="width: 600px; height: 300px; position: relative; bottom: 500px; left: 700px;"></div>
-       
+        <div id="curve_chart" style="width: 700px; height: 400px; position: relative; bottom: 500px; left: 700px;"></div>
+
         <!------------------------------------------------------------->
 
     </body>
