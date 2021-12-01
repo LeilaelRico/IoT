@@ -1,4 +1,4 @@
-# Musguillo Loquillo: Proyecto para TC1004B
+# Musguillo Longuillo: Proyecto para TC1004B
 ## Objetivo
 Implementar herramientas del Internet de las Cosas para el monitoreo, cuidado y conservación del musgo.   
 
